@@ -18,7 +18,7 @@ COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN pnpm build
+RUN pnpm run build
 
 # Stage 3: Production image
 FROM node:22-alpine AS runner
